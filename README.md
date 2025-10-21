@@ -32,14 +32,9 @@ A modern, responsive e-learning platform built with HTML, CSS, and JavaScript. T
 1. Clone the repository:
    ```bash
    git clone https://github.com/arusoftwaresolutions/simple_e_learning_page.git
-   ```
+   ``
 
-2. Navigate to the project directory:
-   ```bash
-   cd simple_e_learning_page
-   ```
-
-3. Open `index.html` in your preferred web browser.
+2. Open `index.html` in your preferred web browser.
 
 ## Project Structure
 
