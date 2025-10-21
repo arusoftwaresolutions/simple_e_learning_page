@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Course Details | Aru Elearning</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="container">
+            <a href="index.html" class="logo">Aru <span>Elearning</span></a>
+            <div class="hamburger" id="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+            <ul class="nav-menu" id="navMenu">
+                <li class="nav-item"><a href="index.html" class="nav-link">Home</a></li>
+                <li class="nav-item"><a href="courses.html" class="nav-link">Courses</a></li>
+                <li class="nav-item"><a href="about.html" class="nav-link">About</a></li>
+                <li class="nav-item"><a href="contact.html" class="nav-link">Contact</a></li>
+            </ul>
+            <button class="theme-toggle" id="themeToggle" aria-label="Toggle dark mode">
+                <i class="fas fa-moon"></i>
+            </button>
+        </div>
+    </nav>
+
+    <!-- Course Detail -->
+    <main class="course-detail">
+        <div class="container">
+            <div class="course-header">
+                <!-- Course info will be loaded dynamically -->
+            </div>
+
+            <!-- Course Content -->
+            <div class="course-content">
+                <div class="course-tabs">
+                    <button class="tab-btn active" data-tab="overview">Overview</button>
+                    <button class="tab-btn" data-tab="curriculum">Curriculum</button>
+                    <button class="tab-btn" data-tab="instructor">Instructor</button>
+                    <button class="tab-btn" data-tab="reviews">Reviews</button>
+                </div>
+
+                <div class="tab-content active" id="overview">
+                    <div class="course-description">
+                        <h3>Course Description</h3>
+                        <p id="courseFullDescription">
+                            <!-- Will be populated by JavaScript -->
+                        </p>
+                        
+                        <h3>What You'll Learn</h3>
+                        <div class="learning-objectives">
+                            <div class="objective">
+                                <i class="fas fa-check-circle"></i>
+                                <span>Master the fundamentals of the subject</span>
+                            </div>
+                            <div class="objective">
+                                <i class="fas fa-check-circle"></i>
+                                <span>Build real-world projects to apply your knowledge</span>
+                            </div>
+                            <div class="objective">
+                                <i class="fas fa-check-circle"></i>
+                                <span>Learn from industry experts with years of experience</span>
+                            </div>
+                            <div class="objective">
+                                <i class="fas fa-check-circle"></i>
+                                <span>Get hands-on experience with practical exercises</span>
+                            </div>
+                            <div class="objective">
+                                <i class="fas fa-check-circle"></i>
+                                <span>Earn a certificate upon completion</span>
+                            </div>
+                        </div>
+                        
+                        <h3>Requirements</h3>
+                        <ul class="requirements-list">
+                            <li>Basic computer skills</li>
+                            <li>A computer with internet access</li>
+                            <li>No prior experience required (for beginner courses)</li>
+                            <li>Willingness to learn and practice</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="tab-content" id="curriculum">
+                    <div class="course-syllabus">
+                        <!-- Will be populated by JavaScript -->
+                    </div>
+                </div>
+
+                <div class="tab-content" id="instructor">
+                    <div class="instructor-detail">
+                        <div class="instructor-header">
+                            <div class="instructor-avatar">
+                                <img id="instructorImage" src="" alt="Instructor">
+                            </div>
+                            <div class="instructor-info">
+                                <h2 id="instructorName"></h2>
+                                <p class="instructor-title" id="instructorTitle"></p>
+                                <div class="instructor-rating">
+                                    <div class="stars">
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star-half-alt"></i>
+                                        <span id="instructorRating"></span>
+                                    </div>
+                                    <div class="reviews-count" id="instructorReviews"></div>
+                                    <div class="students-count" id="instructorStudents"></div>
+                                </div>
+                                <div class="instructor-social">
+                                    <a href="#" class="social-icon"><i class="fab fa-twitter"></i></a>
+                                    <a href="#" class="social-icon"><i class="fab fa-linkedin"></i></a>
+                                    <a href="#" class="social-icon"><i class="fab fa-github"></i></a>
+                                    <a href="#" class="social-icon"><i class="fas fa-globe"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="instructor-bio">
+                            <h3>About Me</h3>
+                            <p id="instructorBio">
+                                <!-- Will be populated by JavaScript -->
+                            </p>
+                        </div>
+                        <div class="instructor-courses">
+                            <h3>My Courses</h3>
+                            <div class="courses-grid" id="instructorCourses">
+                                <!-- Will be populated by JavaScript -->
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="tab-content" id="reviews">
+                    <div class="reviews-container">
+                        <div class="reviews-header">
+                            <div class="reviews-summary">
+                                <div class="average-rating">
+                                    <span id="averageRating">4.8</span>
+                                    <div class="stars">
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star-half-alt"></i>
+                                    </div>
+                                    <span class="reviews-count">Based on <span id="totalReviews">124</span> reviews</span>
+                                </div>
+                                <div class="rating-bars">
+                                    <div class="rating-bar">
+                                        <span class="rating-label">5 stars</span>
+                                        <div class="bar-container">
+                                            <div class="bar" style="width: 85%;"></div>
+                                        </div>
+                                        <span class="rating-percent">85%</span>
+                                    </div>
+                                    <div class="rating-bar">
+                                        <span class="rating-label">4 stars</span>
+                                        <div class="bar-container">
+                                            <div class="bar" style="width: 10%;"></div>
+                                        </div>
+                                        <span class="rating-percent">10%</span>
+                                    </div>
+                                    <div class="rating-bar">
+                                        <span class="rating-label">3 stars</span>
+                                        <div class="bar-container">
+                                            <div class="bar" style="width: 3%;"></div>
+                                        </div>
+                                        <span class="rating-percent">3%</span>
+                                    </div>
+                                    <div class="rating-bar">
+                                        <span class="rating-label">2 stars</span>
+                                        <div class="bar-container">
+                                            <div class="bar" style="width: 1%;"></div>
+                                        </div>
+                                        <span class="rating-percent">1%</span>
+                                    </div>
+                                    <div class="rating-bar">
+                                        <span class="rating-label">1 star</span>
+                                        <div class="bar-container">
+                                            <div class="bar" style="width: 1%;"></div>
+                                        </div>
+                                        <span class="rating-percent">1%</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <button class="btn btn-primary" id="writeReviewBtn">Write a Review</button>
+                        </div>
+
+                        <div class="reviews-list">
+                            <!-- Review items will be added here dynamically -->
+                            <div class="review">
+                                <div class="reviewer">
+                                    <div class="reviewer-avatar">
+                                        <img src="https://randomuser.me/api/portraits/men/32.jpg" alt="Reviewer">
+                                    </div>
+                                    <div class="reviewer-info">
+                                        <h4>John D.</h4>
+                                        <div class="review-rating">
+                                            <div class="stars">
+                                                <i class="fas fa-star"></i>
+                                                <i class="fas fa-star"></i>
+                                                <i class="fas fa-star"></i>
+                                                <i class="fas fa-star"></i>
+                                                <i class="fas fa-star"></i>
+                                            </div>
+                                            <span class="review-date">2 weeks ago</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="review-content">
+                                    <h4>Amazing Course!</h4>
+                                    <p>This course exceeded my expectations. The instructor explains complex topics in a way that's easy to understand. The projects were challenging but rewarding. Highly recommend!</p>
+                                    <div class="review-actions">
+                                        <button class="btn-like"><i class="far fa-thumbs-up"></i> Helpful (24)</button>
+                                        <button class="btn-report">Report</button>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- More reviews... -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- Related Courses -->
+    <section class="section related-courses">
+        <div class="container">
+            <h2 class="section-title">You May Also Like</h2>
+            <div class="courses-grid" id="relatedCourses">
+                <!-- Will be populated by JavaScript -->
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="cta">
+        <div class="container">
+            <h2>Ready to start learning?</h2>
+            <p>Join thousands of students already learning with us.</p>
+            <a href="#enroll" class="btn btn-light btn-lg">Enroll Now</a>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-about">
+                    <h3>Aru Elearning</h3>
+                    <p>Empowering individuals through accessible education for everyone, everywhere.</p>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-linkedin"></i></a>
+                    </div>
+                </div>
+                <div class="footer-links">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="courses.html">Courses</a></li>
+                        <li><a href="#about">About Us</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-contact">
+                    <h4>Contact Us</h4>
+                    <p><i class="fas fa-envelope"></i> info@edulearn.com</p>
+                    <p><i class="fas fa-phone"></i> +1 (555) 123-4567</p>
+                    <p><i class="fas fa-map-marker-alt"></i> 123 Education St, Learn City</p>
+                </div>
+                <div class="footer-newsletter">
+                    <h4>Newsletter</h4>
+                    <p>Subscribe to get the latest course updates.</p>
+                    <form id="newsletterForm">
+                        <input type="email" placeholder="Your email" required>
+                        <button type="submit" class="btn btn-primary">Subscribe</button>
+                    </form>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 EduLearn. All rights reserved.</p>
+                <div class="footer-legal">
+                    <a href="#">Privacy Policy</a>
+                    <a href="#">Terms of Service</a>
+                    <a href="#">Cookie Policy</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+    <script src="js/courses.js"></script>
+</body>
+</html>

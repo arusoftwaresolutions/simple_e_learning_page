@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us | Aru Elearning</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <style>
+        .about-hero {
+            background: linear-gradient(135deg, #f0f9ff 0%, #e0f2fe 100%);
+            padding: 8rem 0 5rem;
+            text-align: center;
+        }
+        [data-theme="dark"] .about-hero {
+            background: linear-gradient(135deg, #0f172a 0%, #1e293b 100%);
+        }
+        .about-content {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 2rem 1.5rem;
+        }
+        .stats {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 2rem;
+            margin: 4rem 0;
+        }
+        .stat-card {
+            background: var(--bg-color);
+            padding: 2rem;
+            border-radius: var(--radius);
+            box-shadow: var(--shadow);
+            text-align: center;
+        }
+        .stat-card i {
+            font-size: 2.5rem;
+            color: var(--primary-color);
+            margin-bottom: 1rem;
+        }
+        .team {
+            margin: 4rem 0;
+        }
+        .team-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 2rem;
+            margin-top: 2rem;
+        }
+        .team-member {
+            background: var(--bg-color);
+            border-radius: var(--radius);
+            overflow: hidden;
+            box-shadow: var(--shadow);
+            transition: var(--transition);
+        }
+        .team-member:hover {
+            transform: translateY(-5px);
+            box-shadow: var(--shadow-md);
+        }
+        .team-img {
+            height: 250px;
+            background: #e2e8f0;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .team-img i {
+            font-size: 5rem;
+            color: var(--primary-color);
+            opacity: 0.7;
+        }
+        .team-info {
+            padding: 1.5rem;
+            text-align: center;
+        }
+        .team-social {
+            display: flex;
+            justify-content: center;
+            gap: 1rem;
+            margin-top: 1rem;
+        }
+        .team-social a {
+            color: var(--text-light);
+            transition: var(--transition);
+        }
+        .team-social a:hover {
+            color: var(--primary-color);
+        }
+    </style>
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="container">
+            <a href="index.html" class="logo">Aru <span>Elearning</span></a>
+            <div class="hamburger" id="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+            <ul class="nav-menu" id="navMenu">
+                <li class="nav-item"><a href="index.html" class="nav-link">Home</a></li>
+                <li class="nav-item"><a href="courses.html" class="nav-link">Courses</a></li>
+                <li class="nav-item"><a href="about.html" class="nav-link active">About</a></li>
+                <li class="nav-item"><a href="contact.html" class="nav-link">Contact</a></li>
+            </ul>
+            <button class="theme-toggle" id="themeToggle" aria-label="Toggle dark mode">
+                <i class="fas fa-moon"></i>
+            </button>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="about-hero">
+        <div class="container">
+            <h1>About Aru Elearning</h1>
+            <p class="lead">Empowering the next generation of learners through accessible, high-quality education.</p>
+        </div>
+    </section>
+
+    <!-- About Content -->
+    <section class="section">
+        <div class="container">
+            <div class="about-content">
+                <h2>Our Mission</h2>
+                <p>At Aru Elearning, we believe that education should be accessible to everyone, everywhere. Our mission is to provide high-quality, affordable, and flexible learning opportunities to students around the world. We're committed to breaking down barriers to education and helping learners achieve their full potential.</p>
+                
+                <h2>Our Story</h2>
+                <p>Founded in 2023, Aru Elearning started as a small team of educators and technologists who shared a common vision: to make learning more engaging, interactive, and effective through technology. What began as a passion project has grown into a global learning platform serving thousands of students across multiple countries.</p>
+                
+                <div class="stats">
+                    <div class="stat-card">
+                        <i class="fas fa-graduation-cap"></i>
+                        <h3>10,000+</h3>
+                        <p>Students Enrolled</p>
+                    </div>
+                    <div class="stat-card">
+                        <i class="fas fa-book"></i>
+                        <h3>50+</h3>
+                        <p>Courses Available</p>
+                    </div>
+                    <div class="stat-card">
+                        <i class="fas fa-chalkboard-teacher"></i>
+                        <h3>100+</h3>
+                        <p>Expert Instructors</p>
+                    </div>
+                    <div class="stat-card">
+                        <i class="fas fa-globe"></i>
+                        <h3>50+</h3>
+                        <p>Countries Reached</p>
+                    </div>
+                </div>
+                
+                <h2>Our Approach</h2>
+                <p>We take a learner-centered approach to education, focusing on practical skills and real-world applications. Our courses are designed by industry experts and experienced educators to ensure they meet the highest standards of quality and relevance.</p>
+                
+                <div class="team">
+                    <h2>Meet Our Team</h2>
+                    <div class="team-grid">
+                        <div class="team-member">
+                            <div class="team-img">
+                                <i class="fas fa-user-tie"></i>
+                            </div>
+                            <div class="team-info">
+                                <h3>John Smith</h3>
+                                <p>Founder & CEO</p>
+                                <div class="team-social">
+                                    <a href="#"><i class="fab fa-linkedin"></i></a>
+                                    <a href="#"><i class="fab fa-twitter"></i></a>
+                                    <a href="#"><i class="fas fa-envelope"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="team-member">
+                            <div class="team-img">
+                                <i class="fas fa-user-graduate"></i>
+                            </div>
+                            <div class="team-info">
+                                <h3>Sarah Johnson</h3>
+                                <p>Head of Education</p>
+                                <div class="team-social">
+                                    <a href="#"><i class="fab fa-linkedin"></i></a>
+                                    <a href="#"><i class="fab fa-twitter"></i></a>
+                                    <a href="#"><i class="fas fa-envelope"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="team-member">
+                            <div class="team-img">
+                                <i class="fas fa-laptop-code"></i>
+                            </div>
+                            <div class="team-info">
+                                <h3>Michael Chen</h3>
+                                <p>CTO</p>
+                                <div class="team-social">
+                                    <a href="#"><i class="fab fa-linkedin"></i></a>
+                                    <a href="#"><i class="fab fa-github"></i></a>
+                                    <a href="#"><i class="fas fa-envelope"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <h2>Why Choose Us?</h2>
+                <ul class="why-us">
+                    <li><strong>Expert Instructors:</strong> Learn from industry professionals with real-world experience.</li>
+                    <li><strong>Flexible Learning:</strong> Study at your own pace, on your own schedule.</li>
+                    <li><strong>Practical Skills:</strong> Gain hands-on experience with real-world projects.</li>
+                    <li><strong>Affordable:</strong> High-quality education at a fraction of the cost of traditional institutions.</li>
+                    <li><strong>Community:</strong> Join a global community of learners and professionals.</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="cta">
+        <div class="container">
+            <h2>Ready to start learning?</h2>
+            <p>Join thousands of students already learning with us.</p>
+            <a href="courses.html" class="btn btn-light btn-lg">Browse Courses</a>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-about">
+                    <h3>Aru Elearning</h3>
+                    <p>Empowering individuals through accessible education for everyone, everywhere.</p>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-linkedin"></i></a>
+                    </div>
+                </div>
+                <div class="footer-links">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="courses.html">Courses</a></li>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-contact">
+                    <h4>Contact Us</h4>
+                    <p><i class="fas fa-envelope"></i> info@aruelearning.com</p>
+                    <p><i class="fas fa-phone"></i> +1 (555) 123-4567</p>
+                    <p><i class="fas fa-map-marker-alt"></i> 123 Education St, Learn City</p>
+                </div>
+                <div class="footer-newsletter">
+                    <h4>Newsletter</h4>
+                    <p>Subscribe to get the latest course updates.</p>
+                    <form id="newsletterForm">
+                        <input type="email" placeholder="Your email" required>
+                        <button type="submit" class="btn btn-primary">Subscribe</button>
+                    </form>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 Aru Elearning. All rights reserved.</p>
+                <div class="footer-legal">
+                    <a href="#">Privacy Policy</a>
+                    <a href="#">Terms of Service</a>
+                    <a href="#">Cookie Policy</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+</html>
