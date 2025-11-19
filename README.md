@@ -2,6 +2,11 @@
 
 A modern, responsive e-learning platform built with HTML, CSS, and JavaScript. This platform allows users to browse courses, view course details, and learn at their own pace.
 
+
+[🚀 **Project Live**](https://arusoftwaresolutions.github.io/simple_e_learning_page/)
+
+
+
 ## Features
 
 - **Responsive Design**: Works on all devices from mobile to desktop
